@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<table>
+    <tr>        
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Возраст</th>
+        <th>Средний бал</th>
+    </tr>
+    {% for student in studens %}
+    <tr>
+        <td>{{student['Имя']}}</td> 
+        <td>{{student['Фамилия']}}</td>
+        <td>{{student['Возраст']}}</td>
+        <td>{{student['Средний бал']}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
